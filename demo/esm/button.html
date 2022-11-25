@@ -1,0 +1,22 @@
+<h1>Demo</h1>
+<div id="app"></div>
+<script type="module">
+    import { createApp } from "vue/dist/vue.esm-bundler.js";
+    import {
+        SFCButton,
+        JSXButton,
+        XButton,
+    } from "../../dist/x-components-library.esm.js";
+
+    createApp({
+        template: `
+<XButton/>
+<JSXButton/>
+<SFCButton/>
+`,
+    })
+        .component(SFCButton.name, SFCButton)
+        .component(JSXButton.name, JSXButton)
+        .component(XButton.name, XButton)
+        .mount("#app");
+</script>

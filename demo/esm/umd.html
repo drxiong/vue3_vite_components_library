@@ -1,0 +1,27 @@
+<h1>Demo UMD</h1>
+<div id="app"></div>
+<link rel="stylesheet" href="../../dist/assets/entry.f065ba01.css">
+<script src="../../node_modules/vue/dist/vue.global.js"></script>
+<!-- <script src="../../node_modules/vue/dist/vue.global.js"></script> -->
+<script src="../../dist/x-components-library.umd.js"></script>
+<!-- <script src="../../dist/x-components-library.iife.js"></script> -->
+<script type="module">
+    const { createApp } = Vue
+    createApp({
+        template: `
+        <div style="margin-bottom:20px;">
+            <IButton color="blue">主要按钮</IButton>
+            <IButton color="green">绿色按钮</IButton>
+            <IButton color="gray">灰色按钮</IButton>
+            <IButton color="yellow">黄色按钮</IButton>
+            <IButton color="red">红色按钮</IButton>
+        </div>
+        <div style="margin-bottom:20px;">
+            <IButton color="blue" icon="search">搜索按钮</IButton>
+            <IButton color="green" icon="edit">编辑按钮</IButton>
+            <IButton color="gray" icon="check">成功按钮</IButton>
+            <IButton color="yellow" icon="message">提示按钮</IButton>
+            <IButton color="red" icon="delete">删除按钮</IButton>
+        </div>
+    `}).use(XComponentsLibrary.default).mount('#app')
+</script>
