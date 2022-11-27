@@ -2,3 +2,5 @@
 . "$(dirname "$0")/_/husky.sh"
 
 pnpm run lint
+
+# //需要 pnpm run prepare 生成 .husky 配置文件。不然commit 前的自动校验不会生效。

@@ -14,7 +14,8 @@
     "lint": "eslint --fix --ext .ts,.vue,.tsx src",
     "format": "prettier --write \"src/**/*.ts\" \"src/**/*.vue\"",
     "test": "vitest",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "test:run": "vitest run"
   },
   "keywords": [],
   "author": "",
@@ -41,6 +42,8 @@
     "vitest": "0.21.1"
   },
   "dependencies": {
+    "@commitlint/cli": "17.0.2",
+    "@commitlint/config-conventional": "17.0.2",
     "@typescript-eslint/eslint-plugin": "^5.44.0",
     "@typescript-eslint/parser": "^5.44.0",
     "@vue/eslint-config-prettier": "^7.0.0",
