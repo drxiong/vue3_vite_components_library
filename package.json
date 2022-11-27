@@ -2,7 +2,6 @@
   "name": "vue3_vite_components_library",
   "version": "0.0.4",
   "description": "",
-  "type": "module",
   "main": "./dist/x-components-library.umd.js",
   "module": "./dist/x-components-library.esm.js",
   "scripts": {
@@ -54,6 +53,7 @@
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-vue": "^9.8.0",
     "prettier": "^2.8.0",
+    "typescript": "^4.9.3",
     "vue": "3.2.37"
   }
 }

@@ -3,8 +3,7 @@ import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
 import vueJsx from "@vitejs/plugin-vue-jsx";
 import Unocss from "./config/unocss";
-import dts from "vite-plugin-dts"
-
+import dts from "vite-plugin-dts";
 
 const rollupOptions = {
   external: ["vue", "vue-router"],
@@ -25,7 +24,7 @@ export default defineConfig({
     //   outputDir: "./dist/types",
     //   // staticImport: true,
     //   insertTypesEntry: false,
-    //   copyDtsFiles: true, 
+    //   copyDtsFiles: true,
     // })
   ],
   build: {
@@ -44,9 +43,9 @@ export default defineConfig({
   },
   test: {
     globals: true,
-    environment: 'happy-dom',
+    environment: "happy-dom",
     transformMode: {
-      web: [/.[tj]sx$/]
-    }
-  }
-})
+      web: [/.[tj]sx$/],
+    },
+  },
+});
