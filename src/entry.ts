@@ -1,7 +1,7 @@
 import { App } from "vue";
 import XButton from "./button";
 import CButton from "./unocss-button";
-import IButton from "./individuation-unocss-button"
+import IButton from "./individuation-unocss-button";
 import SFCButton from "./test/SFCButton.vue";
 import JSXButton from "./test/JSXButton";
 
@@ -18,5 +18,4 @@ export default {
     app.component(CButton.name, CButton);
     app.component(IButton.name, IButton);
   },
-
 };
